@@ -5,13 +5,13 @@ public class BubbleSort {
     public static void main(String[] args) {
         int[] testArray = new int[]{5, 1, 7, 9, 5, 6, 7, 3, 2, 3};
         System.out.println("--Пузырьковая сортировка--\nИзначальный массив:");
-        for(int i = 0; i< testArray.length; i++){
-            System.out.print(testArray[i] + " ");
+        for (int j : testArray) {
+            System.out.print(j + " ");
         }
         bubbleSort(testArray);
         System.out.println("\nСортированный массив:");
-        for(int i = 0; i< testArray.length; i++){
-            System.out.print(testArray[i] + " ");
+        for (int j : testArray) {
+            System.out.print(j + " ");
         }
     }
 

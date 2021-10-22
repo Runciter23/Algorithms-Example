@@ -3,7 +3,7 @@ package org.home.example.algorithms.sorting;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] testArray = new int[]{5, 1, 7, 9, 5, 6, 7, 3, 2, 3};
+        int[] testArray = new int[]{10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
         System.out.println("--Пузырьковая сортировка--\nИзначальный массив:");
         for (int j : testArray) {
             System.out.print(j + " ");
@@ -22,7 +22,7 @@ public class BubbleSort {
      */
 
     public static void bubbleSort(int[] array){
-        for(int i = array.length-1; i > 1; i--){
+        for(int i = array.length-1; i >= 1; i--){
             for(int j = 0; j < i; j++){
                 if(array[j] > array[j+1]){
                     int temp = array[j];
